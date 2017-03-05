@@ -528,76 +528,76 @@ class Ui_tabWidget(object):
 
 #-------------------------runDialogsCadastro-----------------------------------------#
     def runMedico(self):
-        from interface import CadastroMedico
+        import CadastroMedico
         medico = CadastroMedico.Ui_DialogMed()
         medico.run()
 
 
     def runClinica(self):
-        from interface import CadastroClinica
+        import CadastroClinica
         clinica = CadastroClinica.Ui_DialogCli()
         clinica.Run()
 
     def runConsulta(self):
-        from interface import CadastroConsulta
+        import CadastroConsulta
         consulta = CadastroConsulta.Ui_DialogAgenCons()
         consulta.run()
 
     def runEmpregado(self):
-        from interface import CadastroEmpregado
+        import CadastroEmpregado
         empregado = CadastroEmpregado.Ui_DialogEmp()
         empregado.run()
 
     def runEspecialidade(self):
-        from interface import CadastroEspecialidade
+        import CadastroEspecialidade
         especialidade = CadastroEspecialidade.Ui_DialogEspec()
         especialidade.Run()
 
 # -------------------------runDialogsExcluir-----------------------------------------#
 
     def runExcluirMedico(self,codMed):
-        from interface import ExcluirMedico
+        import ExcluirMedico
         medico = ExcluirMedico.Ui_DialogMed()
         medico.run(codMed)
 
     def runExcluirClinica(self,codCli):
-        from interface import ExcluirClinica
+        import ExcluirClinica
         clinica = ExcluirClinica.Ui_DialogCli()
         clinica.run(codCli)
 
     def runExcluirEspecialidade(self,codEspec):
-        from interface import ExcluirEspecialidade
+        import ExcluirEspecialidade
         especialidade = ExcluirEspecialidade.Ui_DialogEspec()
         especialidade.run(codEspec)
 
     def runExcluirConsulta(self,codCli,codMed,data,hora):
-        from interface import ExcluirConsulta
+        import ExcluirConsulta
         consulta = ExcluirConsulta.Ui_DialogAgenCons()
         consulta.run(codCli,codMed,data,hora)
 
     def runExcluirEmpregado(self,codCli,codMed):
-        from interface import ExcluirEmpregado
+        import ExcluirEmpregado
         empregado = ExcluirEmpregado.Ui_DialogEmp()
         empregado.run(codCli,codMed)
 
 # -------------------------runDialogsEditar-----------------------------------------#
     def runEditarMedico(self,codMed):
-        from interface import EditarMedico
+        import EditarMedico
         medico = EditarMedico.Ui_DialogMed()
         medico.run(codMed)
 
     def runEditarEspecialidade(self,codEspec):
-        from interface import EditarEspecialidade
+        import EditarEspecialidade
         especialidade = EditarEspecialidade.Ui_DialogEspec()
         especialidade.run(codEspec)
 
     def runEditarClinica(self,codCli):
-        from interface import EditarClinica
+        import EditarClinica
         clinica = EditarClinica.Ui_DialogCli()
         clinica.run(codCli)
 
     def runEditarConsulta(self,codCli,codMed,data,hora):
-        from interface import EditarConsulta
+        EditarConsulta
         consulta = EditarConsulta.Ui_DialogAgenCons()
         consulta.run(codCli,codMed,data,hora)
 #------------------------------atualizar------------------------------------------#
